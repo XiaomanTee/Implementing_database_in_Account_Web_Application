@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <meta charset="utf-8" />  
+    <title>Accounting Web Application</title>  
+    <meta name="author" content="" />  
+    <meta name="description" content="" />  
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  </head>
+  <body>
+      <div class="container">
+	  <h1>Warehouse Management</h1>
+	  <div class="card">
+	      <div class="card-hearder">
+		  <h3>Main Page</h3>
+	      </div>
+	      <div class="card-body">
+		  <p>Current Stock Level: <span id="stock_level">{{ stock_level }}</spam></p>
+		  <p>Current Account Balance: <span id="account_balance">{{ account_balance }}</spam></p>
+	      </div>
+	  </div>
+
+	  <div class="btn_subpage">
+	      <a href="purchase_form.html" class="btn btn-primary">Purchase Form</a>
+	      <a href="sale_form.html" class="btn btn-primary">Sale Form</a>
+	      <a href="balance_change_form.html" class="btn btn-primary">Balance Change Form</a>
+	      <a href="history.html" class="btn btn-primary">History</a>
+	  </div>
+      </div>
+  </body>
+</html>
